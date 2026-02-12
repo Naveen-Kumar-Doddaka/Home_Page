@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Digital Art Commissions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background: #1f2937;
+            color: white;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin-left: 25px;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #facc15;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 28px;
+            margin: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #facc15;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background: #fde047;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        .btn-secondary:hover {
+            background: #f3f4f6;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #374151;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .art-box {
+            width: 200px;
+            height: 130px;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .art-box:hover {
+            transform: scale(1.05);
+            background: #c7d2fe;
+        }
+
+        /* Pricing */
+        .pricing {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .price-box {
+            width: 230px;
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .price-box:hover {
+            transform: translateY(-6px);
+        }
+
+        .price-box h3 {
+            margin-top: 0;
+            color: #6366f1;
+        }
+
+        .price-box button {
+            margin-top: 15px;
+            padding: 8px 22px;
+            border: none;
+            background: #6366f1;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .price-box button:hover {
+            background: #4338ca;
+        }
+
+        /* Steps Section */
+        .steps {
+            text-align: center;
+            padding: 40px;
+            background: #f3f4f6;
+            font-size: 18px;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .steps span {
+            margin: 0 15px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: right;
+            padding: 20px 30px;
+            background: #1f2937;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .gallery, .pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .steps span {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div><strong>LOGO</strong></div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Order</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Custom Digital Art Commissions</h1>
+        <button class="btn-secondary">View Portfolio</button>
+        <button class="btn-primary">Order Now</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="section-title">Gallery</div>
+    <div class="gallery">
+        <div class="art-box">Art 1</div>
+        <div class="art-box">Art 2</div>
+        <div class="art-box">Art 3</div>
+        <div class="art-box">Art 4</div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="section-title">Pricing</div>
+    <div class="pricing">
+        <div class="price-box">
+            <h3>Basic</h3>
+            <p>Simple Portrait</p>
+            <button>Order</button>
+        </div>
+
+        <div class="price-box">
+            <h3>Standard</h3>
+            <p>Detailed Artwork</p>
+            <button>Order</button>
+        </div>
+
+        <div class="price-box">
+            <h3>Premium</h3>
+            <p>Full Background + HD</p>
+            <button>Order</button>
+        </div>
+    </div>
+
+    <!-- Steps with Symbols -->
+    <div class="steps">
+        <span>📝 Submit Request</span> |
+        <span>💳 Make Payment</span> |
+        <span>🎨 Receive Artwork</span>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Contact | Terms
+    </div>
+
+</div>
+
+</body>
+</html>
