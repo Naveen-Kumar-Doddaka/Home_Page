@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Digital Art Commissions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F1F5F9;
+    color:#0F172A;
+}
+
+section{
+    padding:100px 8%;
+    text-align:center;
+}
+
+h1,h2,h3{
+    font-weight:700;
+}
+
+h2{
+    font-size:36px;
+    margin-bottom:60px;
+}
+
+/* ================= NAVBAR ================= */
+header{
+    background:#0F172A;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    color:#ffffff;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#F97316;
+}
+
+/* ================= BUTTONS ================= */
+.btn{
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#2563EB;
+    color:#ffffff;
+}
+
+.btn-primary:hover{
+    background:#1D4ED8;
+}
+
+.btn-outline{
+    border:2px solid #2563EB;
+    color:#2563EB;
+}
+
+.btn-outline:hover{
+    background:#2563EB;
+    color:#ffffff;
+}
+
+/* ================= HERO ================= */
+.hero{
+    background:linear-gradient(to right,#2563EB,#1D4ED8);
+    color:white;
+    padding:140px 8%;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:30px;
+}
+
+/* ================= GALLERY ================= */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.gallery-item{
+    height:200px;
+    background:#E2E8F0;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.gallery-item:hover{
+    background:#2563EB;
+    color:white;
+    transform:translateY(-10px);
+}
+
+/* ================= HOW IT WORKS ================= */
+.how-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* ================= PRICING ================= */
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:#ffffff;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:scale(1.05);
+}
+
+.price-card h3{
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+/* ================= ARTISTS ================= */
+.artist-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.artist-img{
+    height:200px;
+    background:#E2E8F0;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.stars{
+    margin:10px 0;
+    color:#F97316;
+}
+
+/* ================= REVIEWS ================= */
+.review-section{
+    background:#E2E8F0;
+}
+
+.review{
+    background:#ffffff;
+    padding:30px;
+    margin:20px auto;
+    max-width:600px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ================= CTA ================= */
+.cta{
+    background:#0F172A;
+    color:white;
+    padding:90px 8%;
+}
+
+.cta h2{
+    margin-bottom:30px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#020617;
+    color:#CBD5E1;
+    padding:50px 8%;
+    text-align:center;
+}
+
+footer a{
+    color:#F97316;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Custom Digital Art Commissions</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Artists</a>
+        <a href="#">Pricing</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Custom Art Platform</h1>
+    <a href="#" class="btn btn-primary">Get Started</a>
+    <a href="#" class="btn btn-outline">Explore Artists</a>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">Artwork 1</div>
+        <div class="gallery-item">Artwork 2</div>
+        <div class="gallery-item">Artwork 3</div>
+        <div class="gallery-item">Artwork 4</div>
+    </div>
+</section>
+
+<section>
+    <h2>How It Works</h2>
+    <div class="how-grid">
+        <div class="card"><h3>Submit Request</h3></div>
+        <div class="card"><h3>Make Payment</h3></div>
+        <div class="card"><h3>Receive Artwork</h3></div>
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+        <div class="price-card"><h3>Basic - $29</h3></div>
+        <div class="price-card"><h3>Standard - $59</h3></div>
+        <div class="price-card"><h3>Premium - $99</h3></div>
+    </div>
+</section>
+
+<section>
+    <h2>Top Artists</h2>
+    <div class="artist-grid">
+        <div class="card">
+            <div class="artist-img"></div>
+            <h3>Artist Name</h3>
+            <div class="stars">★★★★★</div>
+            <a href="#" class="btn btn-outline">View Profile</a>
+        </div>
+        <div class="card">
+            <div class="artist-img"></div>
+            <h3>Artist Name</h3>
+            <div class="stars">★★★★★</div>
+            <a href="#" class="btn btn-outline">View Profile</a>
+        </div>
+    </div>
+</section>
+
+<section class="review-section">
+    <h2>Customer Reviews</h2>
+    <div class="review">★★★★★ "Amazing work!"</div>
+    <div class="review">★★★★★ "Highly recommended!"</div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <a href="#" class="btn btn-primary">Sign Up Now</a>
+</section>
+
+<footer>
+    <a href="#">Contact</a> |
+    <a href="#">Terms</a>
+    <br><br>
+    © 2026 Custom Art Platform
+</footer>
+
+</body>
+</html>
